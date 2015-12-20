@@ -6,22 +6,25 @@
 //  Copyright © 2015 William Lam. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PlaylistMasterViewController.h"
 
-@interface ViewController ()
+@interface PlaylistMasterViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PlaylistMasterViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+  [self.aButton setTitle:@"Press me!" forState: UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+- (IBAction)buttonPressed {
+  self.view.backgroundColor = [UIColor orangeColor];
 }
 
 @end
