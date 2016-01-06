@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   [self.aButton setTitle:@"Press me!" forState: UIControlStateNormal];
+  // programmatically setting the title of the aButton in .h file
   
   Playlist *playlist = [[Playlist alloc] initWithIndex:0];
                         self.playlistImageView0.image = playlist.playlistIcon;
